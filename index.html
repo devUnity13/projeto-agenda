@@ -5,10 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <title>Agenda de Contato</title>
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <img id="contact-icon" src="./img/contact_book.png" alt="icone da agenda de contato" />
+            <h1>Agenda de contatos</h1>
+        </div>
+    </header>
+    <main>
+        <section id="form-sec">
+            <div class="container">
+                <form id="myForm">
+                    <input type="text" placeholder="Nome completo" required>
+                    <input type="tel" placeholder="(99) 99999-9999" required pattern="\(\d{2}\)\s*\d{5}-\d{4}" />
+                    <button type="submit">Salvar</button>
+                </form>
+            </div>
+        </section>
+        <section id="table-sec">
+            <div class="container">
+                <table>
+                    <caption>Meus Contatos</caption>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Contato</th>
+                            <th>Icone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><b>Total </b></td>
+                            <td><b>---</b></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+    </main>
 
     <script src="./js/main.js"></script>
 </body>

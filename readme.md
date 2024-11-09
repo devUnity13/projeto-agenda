@@ -14,4 +14,6 @@
 - create: project archives -> index.html | css/main.css | js/main.js
 - commit fix: update readme.md
 - commit create: index.html css/main.css js/main.js
-
+- create: folder img > contact folder img
+- update: update site layout css and index.html
+- commit fix: update site layout and finished html content
