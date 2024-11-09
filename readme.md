@@ -11,4 +11,7 @@
 
 # Create
 - initial commit : create: readme.md
+- create: project archives -> index.html | css/main.css | js/main.js
+- commit fix: update readme.md
+- commit create: index.html css/main.css js/main.js
 
