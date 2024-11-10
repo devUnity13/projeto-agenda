@@ -19,3 +19,4 @@
 # Update
 - update: update site layout css and index.html
 - commit fix: update site layout and finished html content
+- implement javascript logic code.

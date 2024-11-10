@@ -24,8 +24,8 @@
         <section id="form-sec">
             <div class="container">
                 <form id="myForm">
-                    <input type="text" placeholder="Nome completo" required>
-                    <input type="tel" placeholder="(99) 99999-9999" required pattern="\(\d{2}\)\s*\d{5}-\d{4}" />
+                    <input id="nome-contato" type="text" placeholder="Nome completo" required>
+                    <input id="telefone-contato" type="tel" placeholder="(99) 99999-9999" required />
                     <button type="submit">Salvar</button>
                 </form>
             </div>
@@ -38,11 +38,11 @@
                         <tr>
                             <th>Nome</th>
                             <th>Contato</th>
-                            <th>Icone</th>
+                            <th>Tipo</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="table-contato">
+                        <tr class="placeholder">
                             <td>---</td>
                             <td>---</td>
                             <td>---</td>
@@ -51,7 +51,7 @@
                     <tfoot>
                         <tr>
                             <td colspan="2"><b>Total </b></td>
-                            <td><b>---</b></td>
+                            <td><b><span id="total-contatos">---</span></b></td>
                         </tr>
                     </tfoot>
                 </table>
