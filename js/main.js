@@ -42,7 +42,6 @@ form.addEventListener('submit', (e) => {
         tipo: tipoContato
     });
 
-    console.log(totalContatos)
     totalContatos.innerText = listaDeContatos.length
 
     //aqui eu vou remover as linhas de placeholder
@@ -51,7 +50,6 @@ form.addEventListener('submit', (e) => {
     }
 
     resetaCampos();
-    console.log(listaDeContatos);
 })
 
 // Função para aplicar a máscara no telefone
