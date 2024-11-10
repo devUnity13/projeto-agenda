@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <title>Agenda de Contato</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img id="contact-icon" src="./img/contact_book.png" alt="icone da agenda de contato" />
+            <h1>Agenda de contatos</h1>
+        </div>
+    </header>
+    <main>
+        <section id="form-sec">
+            <div class="container">
+                <form id="myForm">
+                    <input id="nome-contato" type="text" placeholder="Nome completo" required>
+                    <input id="telefone-contato" type="tel" maxlength="15" placeholder="Telefone somente numeros"
+                        required />
+                    <button type="submit">Salvar</button>
+                </form>
+            </div>
+        </section>
+        <section id="table-sec">
+            <div class="container">
+                <table>
+                    <caption>Meus Contatos</caption>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Contato</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-contato">
+                        <tr class="placeholder">
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"><b>Total </b></td>
+                            <td><b><span id="total-contatos">---</span></b></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1636;
+    color: #fff;
+}
+
+header h1 {
+    font-family: "Rubik", sans-serif;
+    font-size: 42px;
+    font-weight: normal;
+}
+
+section {
+    font-family: "Poppins", sans-serif;
+}
+
+section caption {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 32px;
+}
+
+#contact-icon {
+    height: 68px;
+    padding: 8px;
+    border-radius: 50px;
+    margin-right: 16px;
+    background-color: #281a52;
+    border: 3px solid #aa9abe;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#table-sec table {
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #1e1636;
+    font-weight: normal;
+}
+
+#table-sec table caption {
+    margin: 16px 0;
+    text-align: start;
+    color: #fff;
+}
+
+th {
+    border-bottom: 3px solid #aa9abe;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: start;
+}
+
+td {
+    text-transform: capitalize;
+}
+
+tfoot {
+    background-color: #aa9abe;
+}
+
+#form-sec .container {
+    margin-bottom: 8px;
+}
+
+#myForm {
+    width: 100%;
+    display: flex;
+    margin-top: 16px;
+}
+
+::placeholder {
+    font-family: "Poppins", sans-serif;
+    color: #aa9abe;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+form input,
+form button {
+    border: none;
+    padding: 16px;
+}
+
+form input {
+    width: 80%;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    border-bottom: 5px solid #aa9abe;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+form button {
+    width: 20%;
+    background-color: rgb(47, 153, 88);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+td img {
+    height: 32px;
+}
+
+input:focus {
+    outline: none;
+    background-color: #f2f2f2;
+}
+
+#total-contatos {
+    margin-left: 15%;
+}
