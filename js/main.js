@@ -14,12 +14,12 @@ telefone.addEventListener('input', mascaraTelefone);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    defineTipoDoNumero();
+
     if (!validaCampos()) {
         resetaCampos();
         return;
     }
-
-    defineTipoDoNumero();
 
     //criar regra de popular a tabela
     linha = criaElemento('tr');
@@ -28,7 +28,13 @@ form.addEventListener('submit', (e) => {
 
     criaConteudoDaLinha(nomeCompleto.value);
     criaConteudoDaLinha(telefone.value);
-    criaConteudoDaLinha(tipoContato);
+
+    if (tipoContato === "Telefone Fixo") {
+        criaConteudoDaLinha("<img src='./img/telefone.png' alt='Telefone Fixo' title='Fixo'>");
+    }
+    else if (tipoContato === "Telefone Celular") {
+        criaConteudoDaLinha("<img src='./img/celular.png' alt='Celular' title='Celular'>");
+    }
 
     listaDeContatos.push({
         pessoa: nomeCompleto.value,
@@ -94,11 +100,13 @@ function validaCampos() {
     nomeValido = nomeCompleto.value.split(' ').length >= 2;
     telefoneValido = telefone.value.length >= 14 && telefone.value.length <= 15;
 
-    if (listaDeContatos.find(element => element.pessoa === nomeCompleto.value) &&
-        listaDeContatos.find(element => element.telefone === telefone.value)) {
-
-        ehDuplicado = true
-        alert("Pessoa já cadastrada!")
+    for (let contato of listaDeContatos) {
+        if (contato.pessoa === nomeCompleto.value) {
+            if (contato.telefone === telefone.value) {
+                ehDuplicado = true;
+                alert(`Pessoa com nome: ${contato.pessoa} e telefone: ${contato.telefone} já cadastrada! Tente outro numero por favor!`)
+            }
+        }
     }
 
     if (!nomeValido) {
@@ -106,7 +114,7 @@ function validaCampos() {
     }
 
     else if (!telefoneValido) {
-        alert("O telefone é inválido!");
+        alert("O telefone é inválido! " + telefone.value);
     }
 
     return nomeValido && telefoneValido && !ehDuplicado ? true : false;

@@ -50,6 +50,7 @@ header .container {
 table {
     border-collapse: collapse;
     width: 100%;
+    margin-bottom: 60px;
 }
 
 #table-sec table {
@@ -67,7 +68,7 @@ table {
 }
 
 th {
-    border-bottom: 1px solid #1e1636;
+    border-bottom: 3px solid #aa9abe;
 }
 
 th,
@@ -76,8 +77,12 @@ td {
     text-align: start;
 }
 
+td {
+    text-transform: capitalize;
+}
+
 tfoot {
-    border-top: 1px solid #1e1636;
+    background-color: #aa9abe;
 }
 
 #form-sec .container {
@@ -130,4 +135,8 @@ td img {
 input:focus {
     outline: none;
     background-color: #f2f2f2;
+}
+
+#total-contatos {
+    margin-left: 15%;
 }
